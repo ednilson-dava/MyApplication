@@ -9,8 +9,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TextView txtSaudar = new TextView(this);
-        txtSaudar.setText("Ola cliente de frango");
+
         setContentView(R.layout.activity_main);
+        Bundle bundle = getIntent().getExtras();
+
+        TextView txtSaudar = findViewById(R.id.txtSuadar);
+        txtSaudar.setText("Ocorreu um erro!");
     }
 }
